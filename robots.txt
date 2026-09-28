@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://mdv39.xsph.ru/sitemap.xml
+Sitemap: https://ymdev.ru/sitemap.xml
