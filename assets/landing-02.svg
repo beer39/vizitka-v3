@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t">
+<title id="t">Демонстрационное превью 2</title>
+<rect width="1200" height="800" fill="#215cff"/>
+<path d="M0 620 L1200 260 L1200 800 L0 800Z" fill="#bbff3f" opacity=".92"/>
+<g fill="none" stroke="#bbff3f" opacity=".5">
+  <circle cx="920" cy="170" r="230"/><circle cx="920" cy="170" r="150"/>
+</g>
+<text x="70" y="100" fill="#bbff3f" font-family="Arial" font-size="23" font-weight="700">ПРЕВЬЮ / 02</text>
+<text x="65" y="350" fill="#f4f1e9" font-family="Arial" font-size="92" font-weight="900">ПРОЕКТ</text>
+<text x="70" y="420" fill="#f4f1e9" font-family="Arial" font-size="28">ЗАМЕНИТЕ НА СКРИНШОТ РЕАЛЬНОГО ПРОЕКТА</text>
+</svg>

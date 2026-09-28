@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Разработка лендингов под ключ и Vue / Nuxt-интерфейсов — Юрий Медведев</title>
+  <meta name="description" content="Лендинги под ключ от 40 000 ₽ и Vue / Nuxt-продукты: структура, дизайн, адаптив, анимации, SEO и запуск. Работаю удалённо по всей России. Telegram: @beer39.">
+  <meta name="author" content="Юрий Медведев">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#f2efe8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="geo.region" content="RU-KGD">
+  <meta name="geo.placename" content="Калининград">
+  <meta name="keywords" content="разработка лендинга под ключ, авторский лендинг, создание сайта, Vue разработчик, Nuxt разработчик, frontend разработчик, продуктовый интерфейс, SEO лендинга, разработка сайта удалённо, Юрий Медведев">
+  <link rel="alternate" hreflang="ru" href="http://mdv39.xsph.ru/">
+  <link rel="alternate" hreflang="x-default" href="http://mdv39.xsph.ru/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Юрий Медведев — лендинги и Vue / Nuxt-интерфейсы">
+  <meta property="og:description" content="От структуры и дизайна до SEO, аналитики и запуска. Удалённо по всей России.">
+  <meta property="og:url" content="http://mdv39.xsph.ru/">
+  <meta property="og:site_name" content="Юрий Медведев — веб-разработка">
+  <meta property="og:image" content="http://mdv39.xsph.ru/preview.jpg">
+  <meta property="og:image:alt" content="Юрий Медведев — разработка лендингов и интерфейсов">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Разработка лендингов под ключ — Юрий Медведев">
+  <meta name="twitter:description" content="Лендинги от 40 000 ₽ и сложные Vue / Nuxt-интерфейсы. Удалённо по России.">
+  <meta name="twitter:image" content="http://mdv39.xsph.ru/preview.jpg">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <link rel="canonical" href="http://mdv39.xsph.ru/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111328054', 'ym');
+
+    ym(111328054, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/111328054" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://mdv39.xsph.ru/#website",
+        "url": "http://mdv39.xsph.ru/",
+        "name": "Юрий Медведев — разработка сайтов",
+        "description": "Лендинги под ключ и Vue / Nuxt-интерфейсы: структура, дизайн, SEO, аналитика и запуск.",
+        "inLanguage": "ru-RU",
+        "publisher": {"@id": "http://mdv39.xsph.ru/#person"}
+      },
+      {
+        "@type": "Person",
+        "@id": "http://mdv39.xsph.ru/#person",
+        "name": "Юрий Медведев",
+        "alternateName": "Yuri Medvedev",
+        "jobTitle": "Frontend-разработчик",
+        "url": "http://mdv39.xsph.ru/",
+        "email": "pq39kmk@mail.ru",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Калининград",
+          "addressCountry": "RU"
+        },
+        "sameAs": [
+          "https://t.me/beer39",
+          "https://www.linkedin.com/in/yuri-medvedev39/"
+        ],
+        "knowsAbout": [
+          "Разработка лендингов",
+          "Vue.js",
+          "Nuxt",
+          "Адаптивная вёрстка",
+          "Веб-производительность",
+          "Архитектура интерфейсов",
+          "SEO"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "http://mdv39.xsph.ru/#service",
+        "name": "Разработка лендингов и веб-интерфейсов",
+        "url": "http://mdv39.xsph.ru/",
+        "provider": {"@id": "http://mdv39.xsph.ru/#person"},
+        "areaServed": [
+          {"@type": "Country", "name": "Россия"},
+          {"@type": "AdministrativeArea", "name": "Калининградская область"}
+        ],
+        "serviceType": [
+          "Лендинг под ключ",
+          "Авторский лендинг",
+          "Разработка Vue / Nuxt-интерфейсов"
+        ],
+        "priceRange": "₽₽",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Форматы работы",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "price": "40000",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Лендинг под ключ",
+                "description": "Сценарий, дизайн, адаптив, анимации, SEO-база, аналитика и технический запуск."
+              }
+            },
+            {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "price": "80000",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Авторский лендинг",
+                "description": "Нестандартная визуальная идея, сильная режиссура, интерактив и запоминающаяся механика."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Vue / Nuxt продукт",
+                "description": "Личный кабинет, сервис, MVP или развитие существующего продукта."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "http://mdv39.xsph.ru/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Что входит в разработку лендинга под ключ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Структура страницы, визуальная концепция, адаптивная разработка, анимации, базовая SEO-настройка, подключение аналитики и технический запуск."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли подключить готовый дизайн?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Возможна разработка по готовому макету или полный цикл от структуры и визуального направления до публикации."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Где вы работаете и с какими регионами?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Работаю удалённо по всей России. База в Калининграде, проекты веду с клиентами из любых регионов — от Москвы и Санкт-Петербурга до регионов. Связь в Telegram, email или LinkedIn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли после запуска развивать сайт?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. Структура и код создаются так, чтобы добавлять новые блоки, страницы, интеграции и функциональность без полной переделки проекта."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько занимает типовой лендинг?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Обычно 1–3 недели в зависимости от объёма, контента и правок. Сложный продукт или Vue / Nuxt-интерфейс оценивается отдельно после короткого брифа."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+  <div class="preloader" id="preloader">
+    <div class="preloader__word">СОБИРАЮ</div>
+    <div class="preloader__line"><i></i></div>
+    <span>структуру из хаоса</span>
+  </div>
+
+  <div class="cursor" aria-hidden="true">
+    <span></span>
+  </div>
+
+  <header class="header">
+    <a class="brand magnetic" href="#top">
+      <span>ЮМ</span>
+      <small>frontend / digital</small>
+    </a>
+
+    <nav>
+      <a href="#approach">Подход</a>
+      <a href="#result">Результат</a>
+      <!-- <a href="#landings">Работы</a> -->
+      <a href="#services">Форматы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+
+    <a class="header-action magnetic" href="#contact">
+      Обсудить проект
+      <b>↗</b>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__topline reveal">
+        <span>ЮРИЙ МЕДВЕДЕВ / Frontend Engineer</span>
+        <span class="hero__topline-info">VUE 3 / NUXT / FRONTEND</span>
+      </div>
+
+      <div class="hero__copy">
+        <p class="hero__eyebrow reveal">НЕ ДЕЛАЮ САЙТЫ ДЛЯ ГАЛОЧКИ</p>
+
+        <h1 class="hero-title" aria-label="Делаю сайты, которые не теряются">
+          <span class="hero-line line-a">
+            <i data-shadow="ДЕЛАЮ">ДЕЛАЮ</i>
+          </span>
+          <span class="hero-line line-b">
+            <i data-shadow="САЙТЫ,">САЙТЫ,</i>
+          </span>
+          <span class="hero-line line-c">
+            <i data-shadow="КОТОРЫЕ">КОТОРЫЕ</i>
+          </span>
+          <span class="hero-line line-d">
+            <i data-shadow="НЕ ТЕРЯЮТСЯ">НЕ ТЕРЯЮТСЯ</i>
+          </span>
+        </h1>
+
+        <div class="hero__bottom reveal">
+          <p>
+            Создаю лендинги под ключ, которые выделяются визуально,
+            быстро работают и ведут человека к заявке. Опыт продуктовой разработки помогает делать их надёжными, адаптивными и готовыми к развитию.
+             Работаю удалённо по России — от структуры и дизайна до SEO, аналитики и запуска.
+          </p>
+
+<!--          <a class="hero-cta magnetic" href="#landings">-->
+<!--            <span>Посмотреть лендинги</span>-->
+<!--            <b>↓</b>-->
+<!--          </a>-->
+        </div>
+      </div>
+
+      <div class="hero-grid" id="heroGrid" aria-hidden="true"></div>
+
+      <div class="hero__stamp">
+        <span>НЕ ШАБЛОН</span>
+        <span>НЕ ШУМ</span>
+        <span>НЕ КОПИЯ</span>
+      </div>
+    </section>
+
+    <section class="transition-section" id="approach">
+      <div class="transition-word chaos-word">ХАОС</div>
+      <div class="transition-arrow">↓</div>
+      <div class="transition-word system-word">СИСТЕМА</div>
+
+      <div class="transition-copy reveal">
+        <span>01 / ПОДХОД</span>
+        <p>
+          Я беру сложную задачу, раскладываю её на понятные части
+          и собираю интерфейс, который не мешает бизнесу расти.
+        </p>
+      </div>
+    </section>
+
+    <section class="result-section" id="result" aria-labelledby="result-title">
+      <div class="result-head reveal">
+        <span>ЧТО ВЫ ПОЛУЧАЕТЕ</span>
+        <h2 id="result-title">НЕ ДЕКОР.<br><em>РАБОЧИЙ РЕЗУЛЬТАТ.</em></h2>
+        <p>
+          Вместо абстрактной демо-анимации — понятный состав работ.
+          Выбираете задачу: страница подстраивает, что именно уйдёт в проект.
+        </p>
+      </div>
+
+      <div class="result-tabs" role="tablist" aria-label="Тип задачи">
+        <button type="button" class="result-tab is-active" role="tab" aria-selected="true" aria-controls="panel-landing" id="tab-landing" data-panel="landing">Нужен лендинг</button>
+        <button type="button" class="result-tab" role="tab" aria-selected="false" aria-controls="panel-product" id="tab-product" data-panel="product">Нужен продукт</button>
+        <button type="button" class="result-tab" role="tab" aria-selected="false" aria-controls="panel-upgrade" id="tab-upgrade" data-panel="upgrade">Нужно усилить сайт</button>
+      </div>
+
+      <div class="result-panels">
+        <div class="result-panel is-active" role="tabpanel" id="panel-landing" aria-labelledby="tab-landing">
+          <div class="result-copy">
+            <h3>Лендинг, который ведёт к заявке</h3>
+            <p>Один сильный сценарий: зацепить, объяснить ценность, снять сомнения и привести к звонку или сообщению.</p>
+            <a class="result-cta magnetic" href="#services">Смотреть форматы <b>↘</b></a>
+          </div>
+          <ul class="result-list">
+            <li><strong>Структура и предложение</strong><span>Понятный путь пользователя от первого экрана до контакта</span></li>
+            <li><strong>Дизайн в коде</strong><span>Без шаблонной сборки: характер бренда и читаемость</span></li>
+            <li><strong>Адаптив и скорость</strong><span>Корректная работа на телефоне и быстрая загрузка</span></li>
+            <li><strong>SEO и аналитика</strong><span>Метаданные, schema, готовность к Метрике</span></li>
+            <li><strong>Технический запуск</strong><span>Публикация на домен и передача проекта</span></li>
+          </ul>
+        </div>
+
+        <div class="result-panel" role="tabpanel" id="panel-product" aria-labelledby="tab-product" hidden>
+          <div class="result-copy">
+            <h3>Vue / Nuxt-интерфейс под рост</h3>
+            <p>Кабинет, сервис или MVP: архитектура, которую можно развивать, а не переписывать после каждого изменения.</p>
+            <a class="result-cta magnetic" href="#services">Обсудить продукт <b>↘</b></a>
+          </div>
+          <ul class="result-list">
+            <li><strong>Сценарии и роли</strong><span>Экраны под реальные задачи пользователей</span></li>
+            <li><strong>Компонентная система</strong><span>Единый UI, меньше хаоса между дизайном и кодом</span></li>
+            <li><strong>Данные без тормозов</strong><span>Таблицы, фильтры, статусы и обновления</span></li>
+            <li><strong>Поддерживаемый код</strong><span>Vue 3 / Nuxt и понятная структура</span></li>
+            <li><strong>План развития</strong><span>Что делать после первого релиза</span></li>
+          </ul>
+        </div>
+
+        <div class="result-panel" role="tabpanel" id="panel-upgrade" aria-labelledby="tab-upgrade" hidden>
+          <div class="result-copy">
+            <h3>Усиление существующего проекта</h3>
+            <p>Если сайт уже есть, но он не продаёт, тормозит или сложно поддерживать — разбираем узкие места и усиливаем точечно.</p>
+            <a class="result-cta magnetic" href="#contact">Запросить оценку <b>↗</b></a>
+          </div>
+          <ul class="result-list">
+            <li><strong>Аудит</strong><span>Структура, скорость, SEO, адаптив и сценарий</span></li>
+            <li><strong>Приоритеты</strong><span>Что даст эффект быстрее всего</span></li>
+            <li><strong>Точечные правки</strong><span>Без полной переделки, если она не нужна</span></li>
+            <li><strong>Новое предложение</strong><span>Тексты и блоки, которые закрывают возражения</span></li>
+            <li><strong>Дорожная карта</strong><span>Понятный план следующих шагов</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<!--
+    <section class="portfolio" id="landings">
+      <div class="portfolio-head reveal">
+        <span>02 / РАБОТЫ</span>
+        <h2>САЙТЫ,<br><em>КОТОРЫЕ ГОВОРЯТ</em></h2>
+        <p>
+          Несколько выбранных проектов на главной.
+          Полная подборка — на отдельной странице.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <a class="portfolio-card reveal" href="#" target="_blank" rel="noopener">
+          <img src="assets/landing-01.svg" alt="Превью лендинга — замените на скрин проекта" width="1200" height="800" loading="lazy">
+          <div><span>Лендинг / 01</span><h3>Название проекта</h3><b>Открыть сайт ↗</b></div>
+        </a>
+        <a class="portfolio-card reveal" href="#" target="_blank" rel="noopener">
+          <img src="assets/landing-02.svg" alt="Превью лендинга — замените на скрин проекта" width="1200" height="800" loading="lazy">
+          <div><span>Лендинг / 02</span><h3>Название проекта</h3><b>Открыть сайт ↗</b></div>
+        </a>
+        <a class="portfolio-card reveal" href="#" target="_blank" rel="noopener">
+          <img src="assets/landing-03.svg" alt="Превью лендинга — замените на скрин проекта" width="1200" height="800" loading="lazy">
+          <div><span>Лендинг / 03</span><h3>Название проекта</h3><b>Открыть сайт ↗</b></div>
+        </a>
+        <a class="portfolio-card reveal" href="#" target="_blank" rel="noopener">
+          <img src="assets/landing-04.svg" alt="Превью лендинга — замените на скрин проекта" width="1200" height="800" loading="lazy">
+          <div><span>Лендинг / 04</span><h3>Название проекта</h3><b>Открыть сайт ↗</b></div>
+        </a>
+      </div>
+
+      <a class="portfolio-all magnetic reveal" href="landings.html">
+        <span>Посмотреть все работы</span><b>↗</b>
+      </a>
+    </section>
+-->
+
+    <section class="expertise" id="proof">
+      <div class="expertise-head reveal">
+        <span>02 / ОПЫТ</span>
+        <h2>НЕ ТОЛЬКО<br><em>ЛЕНДИНГИ.</em></h2>
+        <p>
+          За визуальной подачей стоит опыт большой продуктовой разработки.
+          Я работаю не только с рекламными страницами, но и со сложными
+          внутренними сервисами, кабинетами и интерфейсами с насыщенной бизнес-логикой.
+        </p>
+      </div>
+
+      <div class="expertise-grid">
+        <article class="expertise-card reveal">
+          <span>01</span>
+          <h3>СЛОЖНЫЕ<br>ИНТЕРФЕЙСЫ</h3>
+          <p>
+            Таблицы, фильтры, формы, роли, статусы, очереди задач,
+            WebSocket-обновления и другие сценарии, где одной красивой вёрстки недостаточно.
+          </p>
+          <ul>
+            <li>Личные кабинеты</li>
+            <li>Корпоративные сервисы</li>
+            <li>Панели управления</li>
+          </ul>
+        </article>
+
+        <article class="expertise-card expertise-card--blue reveal">
+          <span>02</span>
+          <h3>АРХИТЕКТУРА<br>И РАЗВИТИЕ</h3>
+          <p>
+            Проектирую компоненты и структуру так, чтобы сайт или продукт
+            можно было поддерживать, дополнять и не переписывать после каждого изменения.
+          </p>
+          <ul>
+            <li>Vue 3 / Nuxt</li>
+            <li>Компонентные системы</li>
+            <li>Поддерживаемый код</li>
+          </ul>
+        </article>
+
+        <article class="expertise-card expertise-card--dark reveal">
+          <span>03</span>
+          <h3>ЛЕНДИНГ<br>КАК ПРОДУКТ</h3>
+          <p>
+            Для меня лендинг — не набор экранов. Это понятный сценарий:
+            заинтересовать, объяснить ценность, снять сомнения и привести к заявке.
+          </p>
+          <ul>
+            <li>Структура и предложение</li>
+            <li>Адаптив и скорость</li>
+            <li>SEO и аналитика</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+<section class="manifest">
+      <div class="manifest-marquee" aria-hidden="true">
+        <div class="manifest-track">
+          <div class="manifest-group">
+            <span>НЕ УКРАШАЮ. УСИЛИВАЮ.</span>
+            <span>НЕ ШАБЛОН — ХАРАКТЕР.</span>
+            <span>СМЫСЛ ПРЕЖДЕ ДЕКОРА.</span>
+            <span>БЫСТРО И ПО ДЕЛУ.</span>
+            <span>ОТ СТРУКТУРЫ ДО ЗАПУСКА.</span>
+            <span>САЙТ, КОТОРЫЙ РАБОТАЕТ.</span>
+          </div>
+          <div class="manifest-group">
+            <span>НЕ УКРАШАЮ. УСИЛИВАЮ.</span>
+            <span>НЕ ШАБЛОН — ХАРАКТЕР.</span>
+            <span>СМЫСЛ ПРЕЖДЕ ДЕКОРА.</span>
+            <span>БЫСТРО И ПО ДЕЛУ.</span>
+            <span>ОТ СТРУКТУРЫ ДО ЗАПУСКА.</span>
+            <span>САЙТ, КОТОРЫЙ РАБОТАЕТ.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="manifest-grid">
+        <article class="manifest-card reveal">
+          <span>01</span>
+          <h3>КРАСИВО —<br>НЕ ЗНАЧИТ<br>БЕСПОЛЕЗНО.</h3>
+          <p>Визуал должен усиливать смысл и вести пользователя.</p>
+        </article>
+
+        <article class="manifest-card manifest-card--dark reveal">
+          <span>02</span>
+          <h3>БЫСТРО —<br>НЕ ЗНАЧИТ<br>ШАБЛОННО.</h3>
+          <p>Сроки и качество могут работать вместе.</p>
+        </article>
+
+        <article class="manifest-card reveal">
+          <span>03</span>
+          <h3>СЛОЖНО —<br>НЕ ЗНАЧИТ<br>НЕПОНЯТНО.</h3>
+          <p>Хороший интерфейс скрывает техническую сложность.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-head reveal">
+        <span>03 / ФОРМАТЫ</span>
+        <h2>ЧТО МОЖНО<br><em>СОБРАТЬ</em></h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-no">01</div>
+          <h3>ЛЕНДИНГ<br>ПОД КЛЮЧ</h3>
+          <p>
+            Сценарий, дизайн, адаптив, анимации,
+            аналитика, SEO-база и технический запуск.
+          </p>
+          <div class="service-bottom">
+            <span>до 10 рабочих дней</span>
+            <strong>от 40 000 ₽</strong>
+          </div>
+        </article>
+
+        <article class="service-card service-card--accent reveal">
+          <div class="service-no">02</div>
+          <h3>АВТОРСКИЙ<br>ЛЕНДИНГ</h3>
+          <p>
+            Нестандартная визуальная идея, сильная режиссура,
+            интерактив и запоминающаяся механика.
+          </p>
+          <div class="service-bottom">
+            <span>до 20 рабочих дней</span>
+            <strong>от 80 000 ₽</strong>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-no">03</div>
+          <h3>VUE / NUXT<br>ПРОДУКТ</h3>
+          <p>
+            Личный кабинет, сервис, MVP или развитие
+            существующего продукта.
+          </p>
+          <div class="service-bottom">
+            <span>после оценки</span>
+            <strong>индивидуально</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mid-cta" aria-label="Быстрый контакт">
+      <div class="mid-cta__inner reveal">
+        <div>
+          <span>ГОТОВЫ ОБСУДИТЬ</span>
+          <h2>Есть задача —<br>соберём формат</h2>
+          <p>Коротко опишите, что нужно запустить или усилить. Подскажу формат, сроки и ориентир по бюджету.</p>
+        </div>
+        <a class="magnetic" href="https://t.me/beer39" target="_blank" rel="noopener">Написать в Telegram <b>↗</b></a>
+      </div>
+    </section>
+
+
+    <section class="faq" id="faq">
+      <div class="faq-head reveal">
+        <span>04 / ВОПРОСЫ</span>
+        <h2>КОРОТКО<br><em>О ГЛАВНОМ</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>Что входит в разработку лендинга под ключ?</summary>
+          <p>Структура страницы, визуальная концепция, адаптивная разработка, анимации, базовая SEO-настройка, подключение аналитики и технический запуск.</p>
+        </details>
+        <details class="reveal">
+          <summary>Можно ли подключить готовый дизайн?</summary>
+          <p>Да. Могу разработать сайт по готовому макету либо собрать весь проект целиком — от структуры и визуального направления до публикации.</p>
+        </details>
+        <details class="reveal">
+          <summary>Где вы работаете и с какими регионами?</summary>
+          <p>Работаю удалённо по всей России. База в Калининграде, проекты веду с клиентами из любых регионов — Москва, Санкт-Петербург и дальше. Связь в Telegram, email или LinkedIn.</p>
+        </details>
+        <details class="reveal">
+          <summary>Можно ли после запуска развивать сайт?</summary>
+          <p>Да. Структура и код создаются так, чтобы добавлять новые блоки, страницы, интеграции и функциональность без полной переделки проекта.</p>
+        </details>
+        <details class="reveal">
+          <summary>Сколько занимает типовой лендинг?</summary>
+          <p>Обычно 1–3 недели в зависимости от объёма, контента и правок. Сложный продукт или Vue / Nuxt-интерфейс оцениваю отдельно после короткого брифа.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-grid" id="contactGrid" aria-hidden="true"></div>
+
+      <div class="contact-copy">
+        <span class="contact-label reveal">05 / КОНТАКТ</span>
+
+        <h2 class="contact-title">
+          <span><i>СОБЕРЁМ</i></span>
+          <span><i>НЕ СТРАНИЦУ.</i></span>
+          <span class="outline"><i>А ВПЕЧАТЛЕНИЕ.</i></span>
+        </h2>
+
+        <p class="contact-text reveal">
+          Расскажи, что нужно запустить или усилить.
+          Я помогу превратить задачу в понятный и сильный цифровой продукт.
+        </p>
+
+        <div class="contact-links reveal">
+          <a class="magnetic" href="https://t.me/beer39" target="_blank" rel="noopener">
+            Telegram <b>↗</b>
+          </a>
+          <div class="contact-email">
+            <a class="magnetic" href="mailto:pq39kmk@mail.ru" data-email="pq39kmk@mail.ru">
+              Email <b>↗</b>
+            </a>
+            <button type="button" class="email-copy" aria-label="Скопировать email">
+              Скопировать
+            </button>
+          </div>
+          <a class="magnetic" href="https://www.linkedin.com/in/yuri-medvedev39/" target="_blank" rel="noopener">
+            LinkedIn <b>↗</b>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <span>© <b id="year"></b> ЮРИЙ МЕДВЕДЕВ</span>
+        <span>РОССИЯ / REMOTE</span>
+        <span><i></i> ДОСТУПЕН ДЛЯ ПРОЕКТОВ</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
